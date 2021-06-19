@@ -13,8 +13,8 @@ type TVShow = {
   imageUrl: string;
 };
 
-export const usePopularShows = (): TVShow[] => {
-  const { data, error } = useSWR(
+export const usePopularShows = (): { data: TVShow[]; loading: boolean } => {
+  const { data, error, isValidating } = useSWR(
     `${API_URL}/${API_VERSION}/tv/popular?api_key=${API_KEY}`,
   );
 
@@ -40,5 +40,8 @@ export const usePopularShows = (): TVShow[] => {
     return [];
   }, [data, error]);
 
-  return tvShows;
+  return {
+    data: tvShows,
+    loading: isValidating && !error && tvShows.length === 0,
+  };
 };
