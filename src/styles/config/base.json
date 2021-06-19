@@ -1539,32 +1539,17 @@
   "flex-shrink": {
     "flexShrink": 1
   },
-  "font-thin": {
-    "fontWeight": "100"
+  "font-regular": {
+    "fontFamily": "IBMPlexSans-Medium"
   },
-  "font-extralight": {
-    "fontWeight": "200"
-  },
-  "font-light": {
-    "fontWeight": "300"
-  },
-  "font-normal": {
-    "fontWeight": "400"
-  },
-  "font-medium": {
-    "fontWeight": "500"
-  },
-  "font-semibold": {
-    "fontWeight": "600"
+  "font-italic": {
+    "fontFamily": "IBMPlexSans-MediumItalic"
   },
   "font-bold": {
-    "fontWeight": "700"
+    "fontFamily": "IBMPlexSans-Bold"
   },
-  "font-extrabold": {
-    "fontWeight": "800"
-  },
-  "font-black": {
-    "fontWeight": "900"
+  "font-bold-italic": {
+    "fontFamily": "IBMPlexSans-BoldItalic"
   },
   "h-0": {
     "height": 0
