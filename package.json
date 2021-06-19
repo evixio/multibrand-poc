@@ -10,7 +10,8 @@
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint src --fix --ext .js,.jsx,.ts,.tsx",
     "prepare": "husky install",
-    "postinstall": "npx jetify && cd ios && pod install"
+    "postinstall": "npx jetify && cd ios && pod install",
+    "clean": "npx react-native-clean-project"
   },
   "dependencies": {
     "react": "17.0.1",
