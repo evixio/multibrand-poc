@@ -8,5 +8,8 @@ trim_trailing_whitespace = true
 indent_style = space
 indent_size = 2
 
+[*.plist]
+indent_style = tab
+
 [*.bat]
 end_of_line = crlf
