@@ -1,5 +1,10 @@
 {
-  "name": "telenet-poc",
+  "name": "@evixio/telenet-poc",
+  "author": {
+    "name": "Wouter De Schuyter",
+    "email": "wouter@evix.io",
+    "url": "https://evix.io"
+  },
   "version": "0.0.1",
   "private": true,
   "scripts": {
