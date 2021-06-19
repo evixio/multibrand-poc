@@ -7,7 +7,7 @@ const API_VERSION = '3';
 const API_KEY = Config.TMDB_API_KEY;
 const IMAGE_URL = 'https://image.tmdb.org/t/p/w500';
 
-type TVShow = {
+export type TVShow = {
   name: string;
   description: string;
   imageUrl: string;
