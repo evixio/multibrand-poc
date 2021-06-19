@@ -32,7 +32,9 @@ export const usePopularTVShows = (): { data: TVShow[]; loading: boolean } => {
         .map((item: Record<string, unknown>) => ({
           name: item.original_name,
           description: item.overview || null,
-          imageUrl: item.poster_path ? `${IMAGE_URL}${item.poster_path}` : null,
+          imageUrl: item.backdrop_path
+            ? `${IMAGE_URL}${item.backdrop_path}`
+            : null,
         }))
         .filter((item: TVShow) => item.imageUrl && item.description);
     }
