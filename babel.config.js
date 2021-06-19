@@ -15,7 +15,7 @@ module.exports = {
             .reduce(
               (res, item) => ({
                 ...res,
-                [`@/${item}`]: `./src/${item}`,
+                [item]: `./src/${item}`,
               }),
               {},
             ),
