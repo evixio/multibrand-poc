@@ -1,0 +1,14 @@
+{
+  "bg-header": {
+    "backgroundColor": "#111"
+  },
+  "text-header": {
+    "color": "#dfe6e9"
+  },
+  "text-primary": {
+    "color": "#2d3436"
+  },
+  "text-secondary": {
+    "color": "#636e72"
+  }
+}

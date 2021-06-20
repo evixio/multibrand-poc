@@ -30,10 +30,10 @@ const styles = StyleSheet.create({
     ...tailwind('p-4'),
   },
   title: {
-    ...tailwind('font-bold text-2xl text-black mb-2'),
+    ...tailwind('mb-2 font-bold text-2xl text-primary'),
   },
   text: {
-    ...tailwind('font-regular text-base text-gray-500'),
+    ...tailwind('font-regular text-base text-secondary'),
   },
 });
 

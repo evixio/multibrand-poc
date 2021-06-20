@@ -3,10 +3,10 @@ import { tailwind } from 'styles/tailwind';
 
 const styles = StyleSheet.create({
   container: {
-    ...tailwind('bg-yellow-400 w-full items-center py-1.5'),
+    ...tailwind('bg-header w-full items-center py-1.5'),
   },
   title: {
-    ...tailwind('font-bold text-lg text-black'),
+    ...tailwind('font-bold text-lg text-header'),
   },
 });
 
