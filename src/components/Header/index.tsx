@@ -20,6 +20,7 @@ const Header = () => {
           <Text style={styles.title}>
             {activeBrand === Brand.Default && 'Default'}
             {activeBrand === Brand.Telenet && 'Telenet'}
+            {activeBrand === Brand.VRT && 'VRT'}
           </Text>
         </SafeAreaView>
       </View>

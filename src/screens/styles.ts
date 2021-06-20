@@ -8,6 +8,9 @@ const styles = StyleSheet.create({
     ...contextualStyles(Brand.Telenet, {
       ...tailwind('bg-gray-50'),
     }),
+    ...contextualStyles(Brand.VRT, {
+      backgroundColor: '#F8F8F9',
+    }),
   },
 });
 

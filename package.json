@@ -14,6 +14,7 @@
     "ios": "react-native run-ios",
     "ios:build:multibrand": "xcodebuild clean archive -workspace ios/Multibrand.xcworkspace -scheme Multibrand -configuration Release -archivePath ios/build/archive/Multibrand.xcarchive",
     "ios:build:telenet": "xcodebuild clean archive -workspace ios/Multibrand.xcworkspace -scheme Telenet -configuration Telenet.release -archivePath ios/build/archive/Telenet.xcarchive",
+    "ios:build:vrt": "xcodebuild clean archive -workspace ios/Multibrand.xcworkspace -scheme VRT -configuration VRT.release -archivePath ios/build/archive/VRT.xcarchive",
     "ios:build:open": "open ios/build/archive",
     "ios:build": "yarn ios:build:multibrand && yarn ios:build:telenet && yarn ios:build:open",
     "start": "react-native start",

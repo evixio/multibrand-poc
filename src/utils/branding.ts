@@ -4,6 +4,7 @@ import DeviceInfo from 'react-native-device-info';
 export enum Brand {
   'Default' = 'default',
   'Telenet' = 'telenet',
+  'VRT' = 'vrt',
 }
 
 class BrandingUtil {
@@ -15,6 +16,8 @@ class BrandingUtil {
     switch (this.bundleId) {
       case 'io.evix.multibrand.telenet':
         return Brand.Telenet;
+      case 'io.evix.multibrand.vrt':
+        return Brand.VRT;
     }
 
     return Brand.Default;

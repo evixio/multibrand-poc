@@ -25,11 +25,20 @@ const styles = StyleSheet.create({
       shadowRadius: 4.65,
       elevation: 6,
     }),
+    ...contextualStyle(Brand.VRT, {
+      borderTopRightRadius: 30,
+      borderTopLeftRadius: 30,
+      borderBottomRightRadius: 30,
+    }),
   },
   image: {
     ...tailwind('w-full'),
     ...contextualStyle(Brand.Telenet, {
       ...tailwind('rounded-xl rounded-b-none'),
+    }),
+    ...contextualStyle(Brand.VRT, {
+      borderTopRightRadius: 30,
+      borderTopLeftRadius: 30,
     }),
     height,
   },
