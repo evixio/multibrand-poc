@@ -10,7 +10,7 @@ class BrandingUtil {
     return DeviceInfo.getBundleId();
   }
 
-  public get brand(): Brand {
+  public get activeBrand(): Brand {
     switch (this.bundleId) {
       case 'io.evix.multibrand.telenet':
         return Brand.Telenet;
@@ -22,4 +22,4 @@ class BrandingUtil {
 
 const Branding = new BrandingUtil();
 
-export default Branding;
+export const activeBrand = Branding.activeBrand;

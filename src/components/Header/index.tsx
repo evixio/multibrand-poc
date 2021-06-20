@@ -1,7 +1,7 @@
 import React from 'react';
 import { StatusBar, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Branding, { Brand } from 'utils/branding';
+import { activeBrand, Brand } from 'utils/branding';
 
 import styles from './styles';
 
@@ -10,7 +10,7 @@ const Header = () => {
     <>
       <StatusBar
         barStyle={
-          [Brand.Telenet].includes(Branding.brand)
+          [Brand.Telenet].includes(activeBrand)
             ? 'light-content'
             : 'dark-content'
         }
@@ -18,8 +18,8 @@ const Header = () => {
       <View style={styles.container}>
         <SafeAreaView style={styles.container} edges={['top']}>
           <Text style={styles.title}>
-            {Branding.brand === Brand.Default && 'Default'}
-            {Branding.brand === Brand.Telenet && 'Telenet'}
+            {activeBrand === Brand.Default && 'Default'}
+            {activeBrand === Brand.Telenet && 'Telenet'}
           </Text>
         </SafeAreaView>
       </View>
