@@ -1,3 +1,4 @@
+import { FlexStyle, TextStyle } from 'react-native';
 import DeviceInfo from 'react-native-device-info';
 
 export enum Brand {
@@ -23,3 +24,14 @@ class BrandingUtil {
 const Branding = new BrandingUtil();
 
 export const activeBrand = Branding.activeBrand;
+
+export const contextualStyles = (
+  brand: Brand,
+  styles: FlexStyle | TextStyle,
+) => {
+  if (brand !== activeBrand) {
+    return {};
+  }
+
+  return styles;
+};

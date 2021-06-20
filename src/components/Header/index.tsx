@@ -10,7 +10,7 @@ const Header = () => {
     <>
       <StatusBar
         barStyle={
-          [Brand.Telenet].includes(activeBrand)
+          [Brand.Default, Brand.Telenet].includes(activeBrand)
             ? 'light-content'
             : 'dark-content'
         }
