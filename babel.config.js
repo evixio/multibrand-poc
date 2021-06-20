@@ -9,16 +9,25 @@ module.exports = {
         root: ['./src', './resources'],
         alias: {
           '@resources': './resources',
-          ...readdirSync('./src', { withFileTypes: true })
-            .filter(dirent => dirent.isDirectory())
-            .map(dirent => dirent.name)
-            .reduce(
-              (res, item) => ({
+          ...readdirSync('./src', { withFileTypes: true }).reduce(
+            (res, entry) => {
+              let key = entry.name;
+              if (!entry.isDirectory()) {
+                // remove extension
+                const parts = entry.name.split('.');
+                parts.pop();
+
+                // key is filename without extension
+                key = parts.join('');
+              }
+
+              return {
                 ...res,
-                [item]: `./src/${item}`,
-              }),
-              {},
-            ),
+                [key]: `./src/${entry.name}`,
+              };
+            },
+            {},
+          ),
         },
       },
     ],
