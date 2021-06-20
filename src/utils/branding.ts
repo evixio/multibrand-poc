@@ -5,12 +5,12 @@ export enum Brand {
   'Telenet' = 'telenet',
 }
 
-class Config {
-  get bundleId() {
+class BrandingUtil {
+  private get bundleId() {
     return DeviceInfo.getBundleId();
   }
 
-  get brand(): Brand {
+  public get brand(): Brand {
     switch (this.bundleId) {
       case 'io.evix.multibrand.telenet':
         return Brand.Telenet;
@@ -20,6 +20,6 @@ class Config {
   }
 }
 
-const DynamicConfig = new Config();
+const Branding = new BrandingUtil();
 
-export default DynamicConfig;
+export default Branding;
