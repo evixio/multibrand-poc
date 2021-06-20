@@ -2,8 +2,10 @@ require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 project 'Multibrand',
-  'Debug' => :debug,
-  'Release' => :release
+'Debug' => :debug,
+'Release' => :release,
+'Telenet.debug' => :debug,
+'Telenet.release' => :release
 
 platform :ios, '10.0'
 
