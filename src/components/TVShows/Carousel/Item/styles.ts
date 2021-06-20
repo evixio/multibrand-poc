@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     ...tailwind('flex-1'),
   },
   cardContent: {
-    ...tailwind('p-4 pb-6'),
+    ...tailwind('p-4 pt-5 pb-6'),
   },
   container: {
     ...tailwind('bg-white rounded-xl'),
