@@ -35,12 +35,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.telenet",
+    package = "io.evix.multibrand",
 )
 
 android_resource(
     name = "res",
-    package = "com.telenet",
+    package = "io.evix.multibrand",
     res = "src/main/res",
 )
 
