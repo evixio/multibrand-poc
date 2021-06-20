@@ -9,7 +9,11 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
+    "android:build": "cd android && ./gradlew assembleRelease",
+    "android:build:open": "open android/app/build/outputs/apk/release",
     "ios": "react-native run-ios",
+    "ios:build": "xcodebuild clean archive -workspace ios/Multibrand.xcworkspace -scheme Multibrand -configuration Release -archivePath ios/build/archive/Multibrand.xcarchive",
+    "ios:build:open": "open ios/build/archive",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
