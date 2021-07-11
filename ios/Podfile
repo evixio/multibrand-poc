@@ -7,7 +7,9 @@ project 'Multibrand',
 'Telenet.debug' => :debug,
 'Telenet.release' => :release,
 'VRT.debug' => :debug,
-'VRT.release' => :release
+'VRT.release' => :release,
+'VTM.debug' => :debug,
+'VTM.release' => :release
 
 platform :ios, '10.0'
 

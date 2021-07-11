@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   container: {
     ...tailwind('bg-white'),
     ...contextualStyle(Brand.Telenet, {
-      ...tailwind('bg-white rounded-xl'),
+      ...tailwind('rounded-xl'),
       shadowColor: 'rgba(0, 0, 0, 0.25)',
       shadowOffset: {
         width: 0,
@@ -30,6 +30,9 @@ const styles = StyleSheet.create({
       borderTopLeftRadius: 30,
       borderBottomRightRadius: 30,
     }),
+    ...contextualStyle(Brand.VTM, {
+      ...tailwind('rounded-lg'),
+    }),
   },
   image: {
     ...tailwind('w-full'),
@@ -39,6 +42,9 @@ const styles = StyleSheet.create({
     ...contextualStyle(Brand.VRT, {
       borderTopRightRadius: 30,
       borderTopLeftRadius: 30,
+    }),
+    ...contextualStyle(Brand.VTM, {
+      ...tailwind('rounded-lg rounded-b-none'),
     }),
     height,
   },

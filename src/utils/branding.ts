@@ -5,6 +5,7 @@ export enum Brand {
   'Default' = 'default',
   'Telenet' = 'telenet',
   'VRT' = 'vrt',
+  'VTM' = 'vtm',
 }
 
 class BrandingUtil {
@@ -18,6 +19,8 @@ class BrandingUtil {
         return Brand.Telenet;
       case 'io.evix.multibrand.vrt':
         return Brand.VRT;
+      case 'io.evix.multibrand.vtm':
+        return Brand.VTM;
     }
 
     return Brand.Default;
